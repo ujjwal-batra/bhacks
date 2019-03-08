@@ -7,22 +7,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="main">
     <header class="header">
-        <img src="" alt="" class="logo">
-        <h1 class="website_name">ED-All</h1>
+        <img src="images/logo.jpg" alt="" class="logo">
+        <h1 class="website_name">Night Owl</h1>
+        <button type="login" class="login">Login/Signup</button>
         <div class="menu-open">
-            <a href="" onclick="openMenu()">
-            <div class="line line1"></div>
-            <div class="line line2"></div>
-            <div class="line line3"></div>
-            </a>
+            <span style="font-size:30px;cursor:pointer"  onclick="openNav()">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </span>
         </div>  
     </header>
     <div id="menu" class="about">
+        <div class = "content">
+            <a>HOME</a><br><hr>
+            <a>QUESTIONS</a><br><hr>
+            <a>CONTENT</a><br><hr>
+            <a>ABOUT</a><br><hr>
+            <a>CONTACT US</a><br><hr>
+        </div>
+    </div>
+
+    <div>
 
     </div>
-</body>
+</div>
+
+
     <script src="style.js">
 
     </script>
+</body>
+    
 </html>

@@ -1,5 +1,5 @@
-var menu = document.getElementById("menu");
+var menu1 = document.getElementById("menu");
 
-function openMenu(){
-    menu.style.width = "20%"
+function openNav() {
+        document.getElementById("menu").style.width = "250px";
 }
