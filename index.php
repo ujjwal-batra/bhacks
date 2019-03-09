@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,7 +14,7 @@
     <header class="header">
         <img src="images/logo.jpg" alt="" class="logo">
         <h1 class="website_name">Night Owl</h1>
-        <a href="login_signup.php"><button type="login" class="login">Login/Signup</button></a>
+        <a href="login_signup.php" class="login">Login/Signup</a>
         <div class="menu-open">
             <span style="font-size:30px;cursor:pointer"  onclick="openNav()">
                 <div class="line line1"></div>
@@ -20,12 +23,14 @@
             </span>
         </div>  
     </header>
+    <div class="tagline"></div>
     <div id="menu" class="about">
         <div class = "content">
+            <div class ="close" onclick="closeNav()">&#10008</div>
             <a>HOME</a><br><hr>
-            <a href="quesdisplay/q_display.php">QUESTIONS</a><br><hr>
-            <a href="upload/blog_upload.php">BLOGS</a><br><hr>
-            <a>CONTENT</a><br><hr>
+            <a href="quesdisplay/q_display.php">ASK/VIEW QUESTIONS</a><br><hr>
+            <a href="upload/blog_upload.php">UPLOAD BLOGS</a><br><hr>
+            <a href="upload/blog_display.php">OUR BLOGS</a><br><hr>
             <a>ABOUT</a><br><hr>
             <a>CONTACT US</a><br><hr>
         </div>
