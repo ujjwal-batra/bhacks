@@ -11,7 +11,7 @@
     <header class="header">
         <img src="images/logo.jpg" alt="" class="logo">
         <h1 class="website_name">Night Owl</h1>
-        <button type="login" class="login">Login/Signup</button>
+        <a href="login_signup.php"><button type="login" class="login">Login/Signup</button></a>
         <div class="menu-open">
             <span style="font-size:30px;cursor:pointer"  onclick="openNav()">
                 <div class="line line1"></div>
@@ -23,7 +23,8 @@
     <div id="menu" class="about">
         <div class = "content">
             <a>HOME</a><br><hr>
-            <a>QUESTIONS</a><br><hr>
+            <a href="quesdisplay/q_display.php">QUESTIONS</a><br><hr>
+            <a href="/upload/blog_upload.php">BLOGS</a>
             <a>CONTENT</a><br><hr>
             <a>ABOUT</a><br><hr>
             <a>CONTACT US</a><br><hr>
