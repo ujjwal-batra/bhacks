@@ -1,6 +1,6 @@
 <?php
     session_start();
-    include 'includes/dbhlogin.inc.php';
+    include 'includes/dbh.inc.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -30,25 +30,6 @@
     <input type="text" name="loginpwd" placeholder="login pwd">
     <button type="submit" name="submit">login</button>
 </form>
-<?php
-
-    // $sql ="SELECT * FROM users WHERE users_uid=?;";
-    // $stmt = mysqli_stmt_init($conn);
-    // if(!mysqli_stmt_prepare( $stmt, $sql)){
-    //         echo "SQL statement failed";
-    // }
-
-    //     while($row=mysqli_fetch_assoc($results))
-    //     {
-    //         echo $row['users_id']."<br>";
-    //         echo $row['users_first']."<br>";
-    //         echo $row['users_last']."<br>";
-    //         echo $row['users_email']."<br>";
-    //         echo $row['users_uid']."<br>";
-    //         echo $row['users_pwd']."<br>";
-    //     }
-?>
-
 </body>
 </html>
 

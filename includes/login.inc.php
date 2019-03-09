@@ -2,26 +2,25 @@
     session_start();
     if(isset($_POST['submit']))
     {
-        include 'dbhlogin.inc.php';
+        include 'dbh.inc.php';
         $uid=mysqli_real_escape_string($conn,$_POST['loginid']);
         $pwd=mysqli_real_escape_string($conn,$_POST['loginpwd']);
         if(empty($uid) || empty($pwd)){
-            header("Location: ../index.php?login=empty");
+            header("Location: ../login_signup.php?login=empty");
         }
         else{
             $sql= "SELECT * FROM users WHERE users_uid='$uid'";
             $result=mysqli_query($conn,$sql);
             $resultCheck=mysqli_num_rows($result);
             if($resultCheck < 1){
-                header("Location: ../index.php?login=error");
-                exit();
+                header("Location: ../login_signup.php?login=error");
             }
             else{
                 if($row=mysqli_fetch_assoc($result)){
                     $hashedpasscheck = password_verify($pwd, $row['users_pwd']);
                     if($hashedpasscheck==false)
                     {
-                        header("Location: ../index.php?login=wrongpass");
+                        header("Location: ../login_signup.php?login=wrongpass");
                     }
                     elseif($hashedpasscheck==true)
                     {
