@@ -5,7 +5,8 @@
         include '../includes/dbh.inc.php';
         $ques=mysqli_real_escape_string($conn,$_POST['ques']);  
         $bid=$_POST['bid'];
-        if (!(isset($_SESSION['login']) && $_SESSION['login'] != '')) {
+        if (!(isset($_SESSION['u_id']))) 
+        {
             header ("Location: ../login_signup.php?login=notloggedin");
         }
         else{
