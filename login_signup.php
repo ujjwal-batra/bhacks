@@ -8,9 +8,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Login/Signup</title>
+    <link rel="stylesheet" href="logincss/style.css">
 </head>
 <body>
+<div class="container">
+<div class="signup">
+<h1>Create Account</h1>
 <form action="includes/signup.inc.php" method="POST">
     <input type="text" name="uname" placeholder="Name">
     <br>
@@ -18,17 +22,22 @@
     <br>
     <input type="text" name="uid" placeholder="Username">
     <br>
-    <input type="text" name="pwd" placeholder="Password">
+    <input type="password" name="pwd" placeholder="Password">
     <br>
-    <button type="submit" name="submit">sign up</button>
+    <button type="submit" name="submit">SIGN UP</button>
 </form>
-<br>
-<br>
+</div>
+<div class="login">
+<h1>Log In</h1>
 <form action="includes/login.inc.php" method="POST">
-    <input type="text" name="loginid" placeholder="login id">
+    <input type="text" name="loginid" placeholder="Username">
     <br>
-    <input type="text" name="loginpwd" placeholder="login pwd">
-    <button type="submit" name="submit">login</button>
+    <input type="password" name="loginpwd" placeholder="Password">
+    <br>
+    <button type="submit" name="submit">LOG IN</button>
+</form>
+</div>
+</div>
 </form>
 </body>
 </html>

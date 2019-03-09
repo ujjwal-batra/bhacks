@@ -1,0 +1,59 @@
+body{
+    background-image: url("loginbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    margin-left: 30%;
+    margin-top: 6%;
+    width: 600px;
+    height: 400px;
+    display: flex;
+    box-shadow: black;
+}
+.signup{
+    flex: 1;
+    background-color: black;
+    opacity: .5;
+    color: white;
+    border-right: 2px white solid;
+}
+.login{
+    background-color: black;
+    flex: 1;
+    opacity: .5;
+    color: white;
+}
+.signup, .login{
+    text-align: center;
+    padding: 30px;
+}
+h1{
+    opacity: 1 !important;
+}
+.signup input, .login input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    padding: 8px;
+    color: black;
+    opacity: 1 !important;
+}
+.container button{
+    border: none;
+    height: 30px;
+    width: 100px;
+    opacity: 1 !important;
+    border-radius: 20px;
+    margin-top: 5px;
+    color: black;
+    font-weight:bold;
+}
+button:active{
+    transform: scale(.90);
+}
+.signup button{
+    opacity: 0;
+}

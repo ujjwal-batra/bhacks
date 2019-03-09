@@ -1,0 +1,41 @@
+body{
+    background-image: url("q_ask_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    width: 600px;
+    height: 400px;
+    background-color: black;
+    opacity: .7;
+    text-align: center;
+}
+.container .head{
+    padding-top: 30px;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+}
+.container .first{
+    width: 400px;
+    height: 60px;
+}
+.container{
+    margin-left: 27%;
+    margin-top: 10%;
+}
+.container input{
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+}
+.container button{
+    border: none;
+    margin-top: 20px;
+    width: 100px;
+    height: 30px;
+    font-weight: bold;
+    border-radius: 20px;
+}

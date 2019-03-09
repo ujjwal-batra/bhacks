@@ -24,7 +24,7 @@
                     }
                     elseif($hashedpasscheck==true)
                     {
-                        $_SESSION['u_id']=$row['id'];
+                        $_SESSION['u_id']=$row['users_id'];
                         $_SESSION['u_name']=$row['users_name'];
                         $_SESSION['u_email']=$row['users_email'];
                         $_SESSION['u_uid']=$row['users_uid'];

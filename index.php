@@ -24,7 +24,7 @@
         <div class = "content">
             <a>HOME</a><br><hr>
             <a href="quesdisplay/q_display.php">QUESTIONS</a><br><hr>
-            <a href="upload/blog_upload.php">BLOGS</a>
+            <a href="upload/blog_upload.php">BLOGS</a><br><hr>
             <a>CONTENT</a><br><hr>
             <a>ABOUT</a><br><hr>
             <a>CONTACT US</a><br><hr>

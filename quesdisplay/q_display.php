@@ -26,7 +26,6 @@ elseif($resultCheck > 0){
     {   
         echo $row['ques_full']."<br>";
         echo $row['ques_maxbid']."<br>";
-        //echo "<a href="../bid/bidding.php">bid</a>";
     }
 }
 
