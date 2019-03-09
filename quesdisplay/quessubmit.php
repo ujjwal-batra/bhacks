@@ -5,10 +5,12 @@
         include '../includes/dbh.inc.php';
         $ques=mysqli_real_escape_string($conn,$_POST['ques']);  
         $bid=$_POST['bid'];
-        if (!(isset($_SESSION['login']) && $_SESSION['login'] != '')) {
-            header ("Location: ../login_signup.php?login=notloggedin");
+        if (!(isset($_SESSION['u_id'])))
+        {
+            header("Location: ../login_signup.php?login=notloggedin");
         }
-        else{
+        elseif(isset($_SESSION['u_id']))
+        {
             $uid=mysqli_real_escape_string($conn,$_SESSION['u_id']);
             $uname=mysqli_real_escape_string($conn,$_SESSION['u_name']);
             $uemail=mysqli_real_escape_string($conn,$_SESSION['u_email']);
